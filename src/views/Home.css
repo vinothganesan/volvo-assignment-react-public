@@ -18,6 +18,11 @@ button{
     border: none;
     background: none;
 }
+.slider{
+  max-width: 740px !important;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 600px) {
   .button-nav {
     display: none !important;
