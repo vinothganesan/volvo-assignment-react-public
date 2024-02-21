@@ -113,9 +113,9 @@ const Home = () => {
     <main>
       <Flex extend={{ padding: 16 }} className="Home">
         {renderFilter()}
-        <Slider ref={customSlider} {...settings} >
+        <Slider ref={customSlider} {...settings} className={filterData?.length === 2 ? "slider" : ""}>
           {filterData.map((i: Car) => (
-            <Flex key={i.id} extend={{ width: "351px" }} >
+            <Flex key={i.id}  >
               <Flex className="car-detail" aria-hidden="true" tabIndex={-1} >
                 <Text subStyle="emphasis" extend={{ color: "#808c98" }}>
                   {i.bodyType.toUpperCase()}
